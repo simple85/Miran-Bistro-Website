@@ -19,26 +19,26 @@ const SCENES: Scene[] = [
   {
     art: "pizza",
     index: "01",
-    title: "Stone‑Baked Pizza",
-    copy: "Hand‑stretched dough, San‑Marzano‑style sauce and bubbling mozzarella, fired until the crust blisters and the cheese sings.",
+    title: "Steinofen‑Pizza",
+    copy: "Handgezogener Teig, fruchtige Tomatensauce und blubbernder Mozzarella – gebacken, bis der Rand Blasen wirft und der Käse Fäden zieht.",
     accent: "text-ember-400",
     glow: "bg-ember-600/25",
   },
   {
     art: "burger",
     index: "02",
-    title: "Smashed Burgers",
-    copy: "Fresh beef smashed on a screaming‑hot grill for lacy, caramelised edges, stacked with melted cheese and our house sauce.",
+    title: "Saftige Burger",
+    copy: "Frisches Rindfleisch auf der heißen Platte plattgedrückt für knusprig‑karamellisierte Ränder, gestapelt mit geschmolzenem Käse und unserer Haussauce.",
     accent: "text-flame-400",
     glow: "bg-flame-600/25",
   },
   {
     art: "fries",
     index: "03",
-    title: "Golden Fries",
-    copy: "Double‑cooked for shattering crunch and a fluffy centre, salted the moment they leave the fryer. Impossible to share.",
-    accent: "text-amber-300",
-    glow: "bg-amber-500/25",
+    title: "Goldene Pommes",
+    copy: "Zweimal frittiert für maximale Knusprigkeit und einen fluffigen Kern, gesalzen direkt aus der Fritteuse. Unmöglich zu teilen.",
+    accent: "text-copper",
+    glow: "bg-ember-500/25",
   },
 ];
 
@@ -131,7 +131,7 @@ export default function FoodScroll() {
         <div className="container-px relative w-full">
           {/* Section label */}
           <p className="absolute left-5 top-6 text-xs font-semibold uppercase tracking-[0.3em] text-cream/40 sm:left-8 lg:left-12">
-            Made fresh, scroll to taste
+            Frisch gemacht – scrolle und genieße
           </p>
 
           {SCENES.map((scene) => (
@@ -152,7 +152,7 @@ export default function FoodScroll() {
                   </p>
                   <div className={`mt-6 inline-flex items-center gap-2 text-sm font-semibold ${scene.accent}`}>
                     <span className="h-px w-10 bg-current" />
-                    Freshly prepared daily
+                    Täglich frisch zubereitet
                   </div>
                 </div>
 

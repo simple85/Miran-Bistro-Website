@@ -5,33 +5,33 @@ import OrderCTA from "@/components/OrderCTA";
 import FoodArt from "@/components/food/FoodArt";
 
 export const metadata: Metadata = {
-  title: "About Us — Miran Bistro Berlin",
+  title: "Über uns — Miran Bistro Berlin",
   description:
-    "20+ years of experience, uncompromising hygiene and fresh ingredients prepared daily. Meet Miran Bistro in Berlin Weißensee.",
+    "20+ Jahre Erfahrung, kompromisslose Hygiene und frische, täglich zubereitete Zutaten. Lerne Miran Bistro in Berlin Weißensee kennen.",
 };
 
 const STATS = [
-  { to: 20, suffix: "+", label: "Years of experience" },
-  { to: 100, suffix: "%", label: "Fresh, daily ingredients" },
-  { to: 30, suffix: "+", label: "Dishes on the menu" },
-  { to: 5, suffix: "★", label: "Standard we cook to" },
+  { to: 20, suffix: "+", label: "Jahre Erfahrung" },
+  { to: 100, suffix: "%", label: "Frische Zutaten, täglich" },
+  { to: 30, suffix: "+", label: "Gerichte auf der Karte" },
+  { to: 5, suffix: "★", label: "Standard, nach dem wir kochen" },
 ];
 
 const VALUES = [
   {
-    title: "Hygiene First",
+    title: "Hygiene zuerst",
     art: "salad",
-    text: "A spotless kitchen isn't optional — it's the foundation. Surfaces are sanitised constantly, ingredients are stored correctly, and our team follows strict food‑safety routines every shift, so you can eat with complete peace of mind.",
+    text: "Eine makellose Küche ist keine Option – sie ist die Grundlage. Flächen werden ständig desinfiziert, Zutaten korrekt gelagert und unser Team folgt in jeder Schicht strengen Hygiene‑Routinen, damit du mit gutem Gewissen genießen kannst.",
   },
   {
-    title: "Always Fresh",
+    title: "Immer frisch",
     art: "doner",
-    text: "We prep vegetables, marinate our meat and bake our bread fresh every single morning. Nothing sits around. What you taste is what we made today — bright, vibrant and full of flavour.",
+    text: "Wir schneiden Gemüse, marinieren unser Fleisch und backen unser Brot jeden Morgen frisch. Nichts bleibt liegen. Was du schmeckst, haben wir heute zubereitet – lebendig und voller Geschmack.",
   },
   {
-    title: "Crafted with Care",
+    title: "Mit Sorgfalt gemacht",
     art: "kofte",
-    text: "Two decades of grilling have taught us that small details matter: the right char, the right seasoning, the right portion. Every plate leaves our counter the way we'd want to be served ourselves.",
+    text: "Zwei Jahrzehnte am Grill haben uns gelehrt, dass die kleinen Dinge zählen: das richtige Röstaroma, die richtige Würze, die richtige Portion. Jeder Teller verlässt unseren Tresen so, wie wir selbst bedient werden möchten.",
   },
 ];
 
@@ -42,11 +42,11 @@ export default function AboutPage() {
         <div className="pointer-events-none absolute right-0 top-10 h-[40vw] w-[40vw] rounded-full bg-flame-600/15 blur-[120px]" />
         <div className="container-px relative">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-ember-400">
-            Our story
+            Unsere Geschichte
           </p>
           <h1 className="max-w-4xl font-display text-5xl font-black leading-[1.02] sm:text-6xl lg:text-7xl">
-            Two decades of <span className="text-gradient">flavour</span>, fresh
-            every day.
+            Zwei Jahrzehnte <span className="text-gradient">Geschmack</span>, jeden
+            Tag frisch.
           </h1>
         </div>
       </header>
@@ -55,22 +55,22 @@ export default function AboutPage() {
       <section className="container-px grid items-center gap-12 py-12 lg:grid-cols-2">
         <Reveal className="space-y-5 text-cream/75">
           <p className="text-lg leading-relaxed">
-            For more than{" "}
-            <strong className="text-cream">20 years</strong>, Miran Bistro has
-            been a familiar address in Berlin&apos;s Weißensee. What started as a
-            small neighbourhood grill has grown into a local favourite — but our
-            promise has never changed.
+            Seit mehr als{" "}
+            <strong className="text-cream">20 Jahren</strong> ist Miran Bistro
+            eine feste Adresse in Berlin‑Weißensee. Was als kleiner Grill im
+            Kiez begann, ist zum lokalen Favoriten gewachsen – unser Versprechen
+            hat sich dabei nie geändert.
           </p>
           <p className="leading-relaxed">
-            We believe great food comes from great ingredients and an honest
-            kitchen. That&apos;s why we prepare everything fresh, keep our
-            standards high and treat every guest like a regular. From the first
-            döner we carved to the thousands of burgers, pizzas and plates since,
-            quality has always come first.
+            Wir glauben, dass großartiges Essen aus großartigen Zutaten und einer
+            ehrlichen Küche entsteht. Deshalb bereiten wir alles frisch zu, halten
+            unsere Standards hoch und behandeln jeden Gast wie einen Stammgast.
+            Vom ersten Döner bis zu den tausenden Burgern, Pizzen und Tellern
+            seither – Qualität stand immer an erster Stelle.
           </p>
           <p className="leading-relaxed">
-            Whether you dine in, pick up or order delivery, you&apos;re getting
-            food made the way it should be: fresh, clean and genuinely good.
+            Ob du bei uns isst, abholst oder liefern lässt: Du bekommst Essen so,
+            wie es sein sollte – frisch, sauber und einfach richtig gut.
           </p>
         </Reveal>
 
@@ -111,7 +111,7 @@ export default function AboutPage() {
       <section className="container-px py-16">
         <Reveal className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="font-display text-4xl font-black sm:text-5xl">
-            What we <span className="text-gradient">stand for</span>
+            Wofür wir <span className="text-gradient">stehen</span>
           </h2>
         </Reveal>
 

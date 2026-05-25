@@ -8,28 +8,42 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Brand palette — dark base built on Deep Wine.
         charcoal: {
-          DEFAULT: "#16110d",
-          800: "#1f1813",
-          700: "#2a211a",
-          600: "#3a2d22",
+          DEFAULT: "#3a120b",
+          800: "#4a1810",
+          700: "#5c1f14",
+          600: "#6e2a1c",
         },
+        // Accent ramp — Copper into Terracotta.
         ember: {
-          50: "#fff7ed",
-          100: "#ffedd5",
-          200: "#fed7aa",
-          300: "#fdba74",
-          400: "#fb923c",
-          500: "#f97316",
-          600: "#ea580c",
-          700: "#c2410c",
+          50: "#fbf1e9",
+          100: "#f5ddca",
+          200: "#e9bd9c",
+          300: "#dca06f",
+          400: "#cf8650",
+          500: "#c2703e",
+          600: "#a85c30",
+          700: "#8b3a2a",
         },
+        // Secondary — Terracotta.
         flame: {
-          400: "#f43f5e",
-          500: "#e11d48",
-          600: "#be123c",
+          400: "#a8492f",
+          500: "#8b3a2a",
+          600: "#6e2a1c",
         },
-        cream: "#f8f1e7",
+        // Brand named tokens.
+        wine: "#5c1f14",
+        terracotta: "#8b3a2a",
+        copper: "#c2703e",
+        sand: "#d4b59e",
+        olive: {
+          DEFAULT: "#5e6b4a",
+          400: "#6f7d57",
+          500: "#5e6b4a",
+          600: "#4d5a3b",
+        },
+        cream: "#f7ede3",
       },
       fontFamily: {
         display: ["var(--font-display)", "Georgia", "serif"],

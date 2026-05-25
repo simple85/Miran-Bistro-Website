@@ -35,12 +35,12 @@ export const MENU: MenuCategory[] = [
   {
     id: "doner",
     title: "Döner & Dürüm",
-    tagline: "Slow-roasted on the vertical grill, carved fresh to order.",
+    tagline: "Langsam am Drehspieß gegart, frisch auf Bestellung geschnitten.",
     items: [
       {
         name: "Döner im Brot",
         description:
-          "Crispy fladenbrot loaded with carved döner, fresh salad and our house sauces.",
+          "Knuspriges Fladenbrot, gefüllt mit frisch geschnittenem Döner, Salat und unseren hausgemachten Saucen.",
         price: "6,50 €",
         art: "doner",
         popular: true,
@@ -48,7 +48,7 @@ export const MENU: MenuCategory[] = [
       {
         name: "Dürüm Döner",
         description:
-          "Thin lavash wrap rolled with tender döner, salad and a swipe of garlic & chilli sauce.",
+          "Dünnes Yufka‑Brot, gerollt mit zartem Döner, Salat und einem Klecks Knoblauch‑ & Chilisauce.",
         price: "7,50 €",
         art: "durum",
         popular: true,
@@ -56,14 +56,14 @@ export const MENU: MenuCategory[] = [
       {
         name: "Döner Teller Menü",
         description:
-          "Generous plate of döner with rice or fries, fresh salad and bread. Comes as a menu.",
+          "Großzügiger Teller Döner mit Reis oder Pommes, frischem Salat und Brot. Als Menü serviert.",
         price: "14,00 €",
         art: "donerplate",
       },
       {
         name: "Dürüm Falafel",
         description:
-          "Crispy chickpea falafel wrapped with hummus, salad and herb sauce. Fully vegetarian.",
+          "Knusprige Kichererbsen‑Falafel im Wrap mit Hummus, Salat und Kräutersauce. Vegetarisch.",
         price: "7,00 €",
         art: "falafel",
         veggie: true,
@@ -73,19 +73,19 @@ export const MENU: MenuCategory[] = [
   {
     id: "burger",
     title: "Burger",
-    tagline: "Smashed beef patties, toasted buns, melted goodness.",
+    tagline: "Saftige Rindfleisch‑Patties, getoastete Buns, geschmolzener Genuss.",
     items: [
       {
         name: "Hamburger Menü",
         description:
-          "Juicy grilled beef patty, fresh salad and sauce in a toasted bun. Served with fries.",
+          "Saftiges gegrilltes Rindfleisch‑Patty, frischer Salat und Sauce im getoasteten Bun. Mit Pommes.",
         price: "11,00 €",
         art: "burger",
       },
       {
         name: "Cheeseburger Menü",
         description:
-          "Our hamburger crowned with melted cheese, served as a menu with golden fries.",
+          "Unser Hamburger gekrönt mit geschmolzenem Käse, als Menü mit goldenen Pommes serviert.",
         price: "12,00 €",
         art: "burger",
         popular: true,
@@ -93,14 +93,14 @@ export const MENU: MenuCategory[] = [
       {
         name: "Chicken Burger",
         description:
-          "Crispy chicken fillet, salad and creamy sauce in a soft toasted bun.",
+          "Knuspriges Hähnchenfilet, Salat und cremige Sauce in einem weichen, getoasteten Bun.",
         price: "8,50 €",
         art: "burger",
       },
       {
         name: "Double Beef Burger",
         description:
-          "Two stacked beef patties, double cheese, onions and house sauce for the hungry.",
+          "Zwei gestapelte Rindfleisch‑Patties, doppelt Käse, Zwiebeln und Haussauce für den großen Hunger.",
         price: "10,50 €",
         art: "burger",
         spicy: true,
@@ -110,12 +110,12 @@ export const MENU: MenuCategory[] = [
   {
     id: "pizza",
     title: "Pizza",
-    tagline: "Stone-baked, bubbling cheese, made the way it should be.",
+    tagline: "Aus dem Steinofen, blubbernder Käse, genau wie sie sein soll.",
     items: [
       {
         name: "Pizza Margherita",
         description:
-          "Classic tomato sauce, plenty of mozzarella and fresh basil on a thin crust.",
+          "Klassische Tomatensauce, reichlich Mozzarella und frisches Basilikum auf dünnem Boden.",
         price: "7,50 €",
         art: "pizza",
         veggie: true,
@@ -123,7 +123,7 @@ export const MENU: MenuCategory[] = [
       {
         name: "Pizza Salami",
         description:
-          "Tomato, mozzarella and a generous layer of spicy salami, baked until golden.",
+          "Tomate, Mozzarella und eine großzügige Lage würzige Salami, goldgelb gebacken.",
         price: "8,50 €",
         art: "pizza",
         popular: true,
@@ -131,7 +131,7 @@ export const MENU: MenuCategory[] = [
       {
         name: "Pizza Funghi",
         description:
-          "Tomato, mozzarella and fresh mushrooms — simple and satisfying.",
+          "Tomate, Mozzarella und frische Champignons – einfach und befriedigend.",
         price: "8,00 €",
         art: "pizza",
         veggie: true,
@@ -139,7 +139,7 @@ export const MENU: MenuCategory[] = [
       {
         name: "Pizza Miran Spezial",
         description:
-          "The house favourite: döner meat, peppers, onions, corn and extra cheese.",
+          "Der Hausfavorit: Dönerfleisch, Paprika, Zwiebeln, Mais und extra Käse.",
         price: "10,50 €",
         art: "pizza",
         spicy: true,
@@ -149,34 +149,34 @@ export const MENU: MenuCategory[] = [
   {
     id: "grill",
     title: "Vom Grill",
-    tagline: "Charcoal-kissed Turkish classics, fired to order.",
+    tagline: "Türkische Klassiker mit Holzkohle‑Aroma, frisch zubereitet.",
     items: [
       {
         name: "Lahmacun",
         description:
-          "Thin Turkish flatbread topped with seasoned minced meat, herbs and a squeeze of lemon.",
+          "Dünnes türkisches Fladenbrot mit gewürztem Hackfleisch, Kräutern und einem Spritzer Zitrone.",
         price: "5,00 €",
         art: "lahmacun",
         popular: true,
       },
       {
-        name: "Pide Hackfleisch",
+        name: "Pide mit Hackfleisch",
         description:
-          "Boat-shaped Turkish pide baked with spiced minced meat and melted cheese.",
+          "Schiffchenförmiges türkisches Pide, gebacken mit gewürztem Hackfleisch und geschmolzenem Käse.",
         price: "9,00 €",
         art: "pide",
       },
       {
         name: "Köfte Teller",
         description:
-          "Grilled Turkish meatballs with rice or fries, fresh salad and bread.",
+          "Gegrillte türkische Hackbällchen mit Reis oder Pommes, frischem Salat und Brot.",
         price: "12,50 €",
         art: "kofte",
       },
       {
         name: "Currywurst Menü",
         description:
-          "Sliced sausage in our spiced curry sauce, served with crispy fries as a menu.",
+          "Wurst in unserer würzigen Currysauce, als Menü mit knusprigen Pommes serviert.",
         price: "8,00 €",
         art: "currywurst",
       },
@@ -185,12 +185,12 @@ export const MENU: MenuCategory[] = [
   {
     id: "snacks",
     title: "Snacks & Beilagen",
-    tagline: "Crispy, golden, impossible to share.",
+    tagline: "Knusprig, golden, unmöglich zu teilen.",
     items: [
       {
         name: "Pommes Frites",
         description:
-          "Golden, crispy fries served with ketchup and mayo. The perfect sidekick.",
+          "Goldene, knusprige Pommes mit Ketchup und Mayo. Der perfekte Begleiter.",
         price: "3,50 €",
         art: "fries",
         veggie: true,
@@ -199,14 +199,14 @@ export const MENU: MenuCategory[] = [
       {
         name: "Chicken Nuggets",
         description:
-          "Crunchy chicken nuggets with a dip of your choice and a side of fries.",
+          "Knusprige Hähnchen‑Nuggets mit einem Dip nach Wahl und einer Portion Pommes.",
         price: "6,50 €",
         art: "nuggets",
       },
       {
         name: "Chicken Wings",
         description:
-          "Marinated, grilled chicken wings with a smoky, slightly spicy glaze.",
+          "Marinierte, gegrillte Hähnchenflügel mit einer rauchigen, leicht scharfen Glasur.",
         price: "7,00 €",
         art: "wings",
         spicy: true,
@@ -214,7 +214,7 @@ export const MENU: MenuCategory[] = [
       {
         name: "Falafel Portion",
         description:
-          "Six crispy chickpea falafel with hummus and fresh herb dip. Vegetarian.",
+          "Sechs knusprige Kichererbsen‑Falafel mit Hummus und frischem Kräuterdip. Vegetarisch.",
         price: "5,50 €",
         art: "falafel",
         veggie: true,
@@ -224,12 +224,12 @@ export const MENU: MenuCategory[] = [
   {
     id: "salads",
     title: "Salate",
-    tagline: "Crisp, fresh and made the same morning.",
+    tagline: "Knackig, frisch und am selben Morgen zubereitet.",
     items: [
       {
         name: "Bauernsalat",
         description:
-          "Tomato, cucumber, peppers, onions and olives with a zesty house dressing.",
+          "Tomate, Gurke, Paprika, Zwiebeln und Oliven mit einem spritzigen Hausdressing.",
         price: "6,00 €",
         art: "salad",
         veggie: true,
@@ -237,7 +237,7 @@ export const MENU: MenuCategory[] = [
       {
         name: "Hähnchensalat",
         description:
-          "Fresh mixed salad topped with warm grilled chicken strips and dressing.",
+          "Frischer gemischter Salat mit warmen gegrillten Hähnchenstreifen und Dressing.",
         price: "8,50 €",
         art: "salad",
         popular: true,

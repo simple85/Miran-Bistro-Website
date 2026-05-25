@@ -9,18 +9,18 @@ import { MENU } from "@/lib/menu";
 
 const PROMISES = [
   {
-    title: "20+ Years",
-    text: "Two decades of feeding Berlin with consistent, crave‑worthy food.",
+    title: "20+ Jahre",
+    text: "Zwei Jahrzehnte, in denen wir Berlin mit konstant gutem Essen verwöhnen.",
     icon: "M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6L12 2z",
   },
   {
-    title: "Fresh Daily",
-    text: "Vegetables prepped and meat marinated fresh every single morning.",
+    title: "Täglich frisch",
+    text: "Gemüse und mariniertes Fleisch werden jeden Morgen frisch vorbereitet.",
     icon: "M12 2C7 7 6 10 6 13a6 6 0 0012 0c0-3-1-6-6-11z",
   },
   {
-    title: "Spotless Hygiene",
-    text: "A clean kitchen you can trust — hygiene is never an afterthought.",
+    title: "Makellose Hygiene",
+    text: "Eine saubere Küche, der du vertrauen kannst – Hygiene ist nie Nebensache.",
     icon: "M12 2l8 4v6c0 5-3.4 9-8 10-4.6-1-8-5-8-10V6l8-4zm-1 13l5-5-1.4-1.4L11 12.2 9.4 10.6 8 12l3 3z",
   },
 ];
@@ -60,17 +60,17 @@ export default function HomePage() {
         <Reveal className="flex flex-col items-end justify-between gap-6 sm:flex-row sm:items-end">
           <div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-ember-400">
-              Crowd favourites
+              Beliebt bei allen
             </p>
             <h2 className="font-display text-4xl font-black sm:text-5xl">
-              Taste the <span className="text-gradient">specialties</span>
+              Probiere unsere <span className="text-gradient">Spezialitäten</span>
             </h2>
           </div>
           <Link
             href="/menu"
             className="btn-outline shrink-0"
           >
-            View full menu →
+            Ganze Speisekarte →
           </Link>
         </Reveal>
 

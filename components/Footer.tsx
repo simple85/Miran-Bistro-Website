@@ -15,26 +15,26 @@ export default function Footer() {
             </span>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/60">
-            Fresh, hygienic and charcoal-grilled. Over 20 years of feeding Berlin
-            with döner, burgers, pizza and Turkish classics.
+            Frisch, hygienisch und vom Grill. Seit über 20 Jahren verwöhnen wir
+            Berlin mit Döner, Burgern, Pizza und türkischen Klassikern.
           </p>
         </div>
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-widest text-ember-400">
-            Explore
+            Entdecken
           </h4>
           <ul className="mt-4 space-y-2 text-sm text-cream/70">
-            <li><Link className="hover:text-cream" href="/">Home</Link></li>
-            <li><Link className="hover:text-cream" href="/menu">Specialties</Link></li>
-            <li><Link className="hover:text-cream" href="/about">About Us</Link></li>
-            <li><Link className="hover:text-cream" href="/contact">Contact</Link></li>
+            <li><Link className="hover:text-cream" href="/">Start</Link></li>
+            <li><Link className="hover:text-cream" href="/menu">Spezialitäten</Link></li>
+            <li><Link className="hover:text-cream" href="/about">Über uns</Link></li>
+            <li><Link className="hover:text-cream" href="/contact">Kontakt</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-widest text-ember-400">
-            Visit Us
+            Besuch uns
           </h4>
           <ul className="mt-4 space-y-2 text-sm text-cream/70">
             <li>{CONTACT.street}</li>
@@ -51,7 +51,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Get Directions →
+                Route planen →
               </a>
             </li>
           </ul>
@@ -59,7 +59,7 @@ export default function Footer() {
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-widest text-ember-400">
-            Order Online
+            Online bestellen
           </h4>
           <div className="mt-4 flex flex-col gap-3">
             <a
@@ -68,15 +68,15 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="btn-primary"
             >
-              Order on Lieferando
+              Bei Lieferando bestellen
             </a>
             <a
               href={LINKS.uberEats}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-outline"
+              className="btn-primary bg-gradient-to-r from-olive-500 to-olive-600"
             >
-              Order on Uber Eats
+              Bei Uber Eats bestellen
             </a>
           </div>
         </div>
@@ -84,8 +84,8 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-px flex flex-col items-center justify-between gap-3 py-6 text-xs text-cream/50 sm:flex-row">
-          <p>© {new Date().getFullYear()} Miran Bistro. All rights reserved.</p>
-          <p>Langhansstraße 61, 13086 Berlin · Made with care.</p>
+          <p>© {new Date().getFullYear()} Miran Bistro. Alle Rechte vorbehalten.</p>
+          <p>Langhansstraße 61, 13086 Berlin · Mit Liebe gemacht.</p>
         </div>
       </div>
     </footer>

@@ -5,9 +5,9 @@ import OrderCTA from "@/components/OrderCTA";
 import { MENU } from "@/lib/menu";
 
 export const metadata: Metadata = {
-  title: "Specialties & Menu — Miran Bistro Berlin",
+  title: "Spezialitäten & Speisekarte — Miran Bistro Berlin",
   description:
-    "Explore Miran Bistro's specialties: fresh döner, dürüm, smashed burgers, stone‑baked pizza, lahmacun, köfte, crispy fries and salads.",
+    "Entdecke die Spezialitäten von Miran Bistro: frischer Döner, Dürüm, saftige Burger, Steinofen‑Pizza, Lahmacun, Köfte, knusprige Pommes und Salate.",
 };
 
 export default function MenuPage() {
@@ -17,14 +17,15 @@ export default function MenuPage() {
         <div className="pointer-events-none absolute left-1/2 top-10 h-[40vw] w-[40vw] -translate-x-1/2 rounded-full bg-ember-600/15 blur-[120px]" />
         <div className="container-px relative text-center">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-ember-400">
-            Our specialties
+            Unsere Spezialitäten
           </p>
           <h1 className="font-display text-5xl font-black sm:text-6xl lg:text-7xl">
-            The <span className="text-gradient">Menu</span>
+            Die <span className="text-gradient">Speisekarte</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-cream/70">
-            Everything is grilled to order with fresh ingredients prepared the
-            same day. Below are our most‑loved dishes — come hungry.
+            Alles wird auf Bestellung gegrillt – mit frischen Zutaten, die am
+            selben Tag zubereitet werden. Hier sind unsere beliebtesten Gerichte.
+            Komm hungrig.
           </p>
         </div>
       </header>
@@ -72,8 +73,8 @@ export default function MenuPage() {
         ))}
 
         <p className="text-center text-xs text-cream/40">
-          Dish images are illustrative. Prices and availability may vary — see
-          Lieferando or Uber Eats for live ordering.
+          Die Gerichtbilder sind illustrativ. Preise und Verfügbarkeit können
+          abweichen – aktuelle Bestellungen über Lieferando oder Uber Eats.
         </p>
       </div>
 

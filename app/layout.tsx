@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = {
-  title: "Miran Bistro — Fresh Döner, Burgers & Pizza in Berlin",
+  title: "Miran Bistro — Frischer Döner, Burger & Pizza in Berlin",
   description:
-    "Miran Bistro in Berlin Weißensee. 20+ years of fresh, hygienic, charcoal-grilled döner, burgers, pizza and Turkish classics. Order on Lieferando or Uber Eats.",
+    "Miran Bistro in Berlin‑Weißensee. Seit 20+ Jahren frischer, hygienischer Döner, Burger, Pizza und türkische Klassiker vom Grill. Jetzt bei Lieferando oder Uber Eats bestellen.",
   keywords: [
     "Miran Bistro",
     "Berlin Döner",
@@ -19,10 +19,11 @@ export const metadata: Metadata = {
     "Uber Eats",
   ],
   openGraph: {
-    title: "Miran Bistro — Fresh Döner, Burgers & Pizza in Berlin",
+    title: "Miran Bistro — Frischer Döner, Burger & Pizza in Berlin",
     description:
-      "20+ years of fresh, hygienic, charcoal-grilled food in Berlin. Order now.",
+      "Seit 20+ Jahren frisches, hygienisches Essen vom Grill in Berlin. Jetzt bestellen.",
     type: "website",
+    locale: "de_DE",
   },
 };
 
@@ -32,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="de">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

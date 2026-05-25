@@ -12,50 +12,50 @@ const REVIEWS: Review[] = [
   {
     name: "Daniel K.",
     initial: "D",
-    time: "2 weeks ago",
-    text: "Best döner in Weißensee, hands down. The meat is always fresh, juicy and perfectly seasoned. You can tell they care about quality.",
+    time: "vor 2 Wochen",
+    text: "Der beste Döner in Weißensee, ganz klar. Das Fleisch ist immer frisch, saftig und perfekt gewürzt. Man merkt, dass hier auf Qualität geachtet wird.",
     color: "from-ember-500 to-flame-500",
   },
   {
     name: "Sophie M.",
     initial: "S",
-    time: "1 month ago",
-    text: "Ordered the cheeseburger menu and the pizza — both arrived hot and absolutely delicious. Super friendly staff and spotless counter.",
-    color: "from-emerald-500 to-emerald-600",
+    time: "vor 1 Monat",
+    text: "Cheeseburger‑Menü und Pizza bestellt – beides kam heiß und richtig lecker an. Super freundliches Personal und ein blitzsauberer Tresen.",
+    color: "from-olive-500 to-olive-600",
   },
   {
     name: "Mehmet A.",
     initial: "M",
-    time: "3 weeks ago",
-    text: "Tastes like home. The lahmacun and köfte are exactly how they should be. Generous portions and very fair prices.",
-    color: "from-sky-500 to-blue-600",
+    time: "vor 3 Wochen",
+    text: "Schmeckt wie zu Hause. Lahmacun und Köfte sind genau so, wie sie sein sollten. Großzügige Portionen und faire Preise.",
+    color: "from-ember-400 to-ember-600",
   },
   {
     name: "Laura B.",
     initial: "L",
-    time: "2 months ago",
-    text: "My go‑to spot for a quick, fresh lunch. The fries are unreal and the salads are always crisp. Highly recommend!",
-    color: "from-purple-500 to-fuchsia-600",
+    time: "vor 2 Monaten",
+    text: "Mein Stammladen für ein schnelles, frisches Mittagessen. Die Pommes sind der Wahnsinn und die Salate immer knackig. Sehr zu empfehlen!",
+    color: "from-flame-400 to-flame-600",
   },
   {
     name: "Tobias R.",
     initial: "T",
-    time: "1 week ago",
-    text: "Fast delivery via Lieferando, food still warm and packed with care. The Miran special pizza is a must‑try.",
-    color: "from-rose-500 to-flame-500",
+    time: "vor 1 Woche",
+    text: "Schnelle Lieferung über Lieferando, Essen noch warm und sorgfältig verpackt. Die Miran‑Spezial‑Pizza muss man probiert haben.",
+    color: "from-ember-600 to-flame-600",
   },
   {
     name: "Aylin Y.",
     initial: "A",
-    time: "1 month ago",
-    text: "Clean, welcoming and consistently great food for years. You can taste that everything is made fresh. Five stars!",
-    color: "from-amber-500 to-ember-500",
+    time: "vor 1 Monat",
+    text: "Sauber, einladend und seit Jahren durchweg gutes Essen. Man schmeckt, dass alles frisch zubereitet ist. Fünf Sterne!",
+    color: "from-ember-300 to-ember-500",
   },
 ];
 
 function Stars() {
   return (
-    <div className="flex text-ember-400" aria-label="5 out of 5 stars">
+    <div className="flex text-ember-400" aria-label="5 von 5 Sternen">
       {[...Array(5)].map((_, i) => (
         <svg key={i} width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 2l2.9 6.2 6.8.8-5 4.6 1.3 6.7L12 17.8 5.9 20.4 7.2 13.7 2.2 9.1l6.8-.8L12 2z" />
@@ -83,16 +83,16 @@ export default function Reviews() {
       <div className="container-px relative">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-cream/70">
-            <GoogleG /> Loved on Google
+            <GoogleG /> Beliebt auf Google
           </p>
           <h2 className="font-display text-4xl font-black sm:text-5xl">
-            What Berlin is <span className="text-gradient">saying</span>
+            Was Berlin <span className="text-gradient">sagt</span>
           </h2>
           <div className="mt-5 flex items-center justify-center gap-3">
-            <span className="font-display text-4xl font-black">4.7</span>
+            <span className="font-display text-4xl font-black">4,7</span>
             <div>
               <Stars />
-              <p className="text-xs text-cream/60">Hundreds of reviews</p>
+              <p className="text-xs text-cream/60">Hunderte Bewertungen</p>
             </div>
           </div>
         </Reveal>

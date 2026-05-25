@@ -121,24 +121,25 @@ export default function Hero() {
       <div className="container-px relative z-20 text-center">
         <p className="hero-eyebrow mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-ember-400/30 bg-ember-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-ember-300">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-ember-400" />
-          Berlin · Weißensee · Since 2004
+          Berlin · Weißensee · Seit 2004
         </p>
 
         <h1 className="font-display text-5xl font-black leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
           <span className="block overflow-hidden">
-            <span className="hero-line block">Flame‑Grilled</span>
+            <span className="hero-line block">Flammengegrillte</span>
           </span>
           <span className="block overflow-hidden">
-            <span className="hero-line block text-gradient">Perfection</span>
+            <span className="hero-line block text-gradient">Perfektion</span>
           </span>
           <span className="block overflow-hidden">
-            <span className="hero-line block">Every Single Bite</span>
+            <span className="hero-line block">in jedem Bissen</span>
           </span>
         </h1>
 
         <p className="hero-sub mx-auto mt-6 max-w-2xl text-base text-cream/70 sm:text-lg">
-          Freshly carved döner, smashed burgers, stone‑baked pizza and crispy
-          fries — made the same morning, grilled to order, loved across Berlin.
+          Frisch geschnittener Döner, saftige Burger, steinofenfrische Pizza und
+          knusprige Pommes – täglich frisch zubereitet, auf Bestellung gegrillt
+          und in ganz Berlin beliebt.
         </p>
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
@@ -148,15 +149,15 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="hero-btn btn-primary w-full sm:w-auto"
           >
-            Order on Lieferando
+            Bei Lieferando bestellen
           </a>
           <a
             href={LINKS.uberEats}
             target="_blank"
             rel="noopener noreferrer"
-            className="hero-btn btn-primary w-full bg-gradient-to-r from-emerald-500 to-emerald-600 shadow-emerald-500/30 hover:shadow-emerald-500/40 sm:w-auto"
+            className="hero-btn btn-primary w-full bg-gradient-to-r from-olive-500 to-olive-600 shadow-olive-500/30 hover:shadow-olive-500/40 sm:w-auto"
           >
-            Order on Uber Eats
+            Bei Uber Eats bestellen
           </a>
           <a
             href={LINKS.directions}
@@ -164,7 +165,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="hero-btn btn-outline w-full sm:w-auto"
           >
-            Get Directions
+            Route planen
           </a>
         </div>
 
@@ -175,8 +176,8 @@ export default function Hero() {
             ))}
           </div>
           <span className="text-sm text-cream/80">
-            <strong className="text-cream">4.7/5</strong> from hundreds of happy
-            guests
+            <strong className="text-cream">4,7/5</strong> von hunderten
+            zufriedenen Gästen
           </span>
         </div>
       </div>

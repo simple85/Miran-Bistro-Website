@@ -7,10 +7,10 @@ import { LINKS } from "@/lib/links";
 import { asset } from "@/lib/asset";
 
 const NAV = [
-  { href: "/", label: "Home" },
-  { href: "/menu", label: "Specialties" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/", label: "Start" },
+  { href: "/menu", label: "Spezialitäten" },
+  { href: "/about", label: "Über uns" },
+  { href: "/contact", label: "Kontakt" },
 ];
 
 export default function Navbar() {
@@ -69,14 +69,22 @@ export default function Navbar() {
           })}
         </ul>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-2 md:flex">
           <a
             href={LINKS.lieferando}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary"
+            className="btn-primary px-5 py-2.5 text-xs"
           >
-            Order Now
+            Lieferando
+          </a>
+          <a
+            href={LINKS.uberEats}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary bg-gradient-to-r from-olive-500 to-olive-600 px-5 py-2.5 text-xs shadow-olive-500/30 hover:shadow-olive-500/40"
+          >
+            Uber Eats
           </a>
         </div>
 
@@ -127,14 +135,22 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li className="pt-2">
+          <li className="grid grid-cols-2 gap-2 pt-2">
             <a
               href={LINKS.lieferando}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary w-full"
             >
-              Order Now
+              Lieferando
+            </a>
+            <a
+              href={LINKS.uberEats}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary w-full bg-gradient-to-r from-olive-500 to-olive-600"
+            >
+              Uber Eats
             </a>
           </li>
         </ul>
