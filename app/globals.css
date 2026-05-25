@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-charcoal text-cream font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #f97316;
+    color: #16110d;
+  }
+}
+
+/* Lenis smooth scroll recommended styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-ember-300 via-ember-500 to-flame-500 bg-clip-text text-transparent;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-ember-400 focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-ember-500 to-flame-500 text-white shadow-lg shadow-flame-500/30 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-flame-500/40;
+  }
+
+  .btn-outline {
+    @apply btn border border-cream/25 bg-white/5 text-cream backdrop-blur hover:-translate-y-0.5 hover:border-ember-400 hover:bg-white/10;
+  }
+
+  .card-glow {
+    @apply relative overflow-hidden rounded-3xl border border-white/10 bg-charcoal-800/70 backdrop-blur;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #16110d;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#f97316, #e11d48);
+  border-radius: 9999px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .lenis.lenis-smooth {
+    scroll-behavior: smooth !important;
+  }
+}
