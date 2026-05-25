@@ -3,6 +3,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = {
   title: "Miran Bistro — Fresh Döner, Burgers & Pizza in Berlin",
@@ -43,7 +44,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <link rel="icon" href={asset("/logo.svg")} type="image/svg+xml" />
       </head>
       <body>
         <SmoothScroll>

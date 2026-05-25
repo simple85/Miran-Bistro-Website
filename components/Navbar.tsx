@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LINKS } from "@/lib/links";
+import { asset } from "@/lib/asset";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -39,7 +40,7 @@ export default function Navbar() {
       <nav className="container-px flex h-16 items-center justify-between md:h-20">
         <Link href="/" className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.svg" alt="Miran Bistro" className="h-10 w-10 md:h-12 md:w-12" />
+          <img src={asset("/logo.svg")} alt="Miran Bistro" className="h-10 w-10 md:h-12 md:w-12" />
           <span className="font-display text-xl font-extrabold tracking-wide md:text-2xl">
             Miran <span className="text-gradient">Bistro</span>
           </span>

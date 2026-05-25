@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CONTACT, LINKS } from "@/lib/links";
+import { asset } from "@/lib/asset";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="md:col-span-1">
           <div className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.svg" alt="Miran Bistro" className="h-12 w-12" />
+            <img src={asset("/logo.svg")} alt="Miran Bistro" className="h-12 w-12" />
             <span className="font-display text-xl font-extrabold">
               Miran <span className="text-gradient">Bistro</span>
             </span>
