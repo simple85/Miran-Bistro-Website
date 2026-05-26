@@ -9,9 +9,8 @@ export const metadata: Metadata = {
 };
 
 const HOURS = [
-  { day: "Montag – Freitag", time: "11:00 – 23:00" },
-  { day: "Samstag", time: "11:00 – 23:00" },
-  { day: "Sonntag", time: "12:00 – 23:00" },
+  { day: "Montag – Freitag", time: "10:00 – 03:00" },
+  { day: "Freitag - Sonntag", time: "10:00 – 05:00" },
 ];
 
 // Storefront photo from the Google Maps listing (upscaled).
