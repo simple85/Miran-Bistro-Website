@@ -8,7 +8,6 @@ import type { FoodArt as FoodArtName } from "@/lib/menu";
 
 type Scene = {
   art: FoodArtName;
-  index: string;
   title: string;
   copy: string;
   accent: string;
@@ -18,7 +17,6 @@ type Scene = {
 const SCENES: Scene[] = [
   {
     art: "doner",
-    index: "01",
     title: "Frischer Döner",
     copy: "Am Drehspieß langsam gegart und frisch von Hand geschnitten – mit knackigem Salat und unseren hausgemachten Saucen im warmen Fladenbrot.",
     accent: "text-ember-300",
@@ -26,7 +24,6 @@ const SCENES: Scene[] = [
   },
   {
     art: "pizza",
-    index: "02",
     title: "Steinofen‑Pizza",
     copy: "Handgezogener Teig, fruchtige Tomatensauce und blubbernder Mozzarella – gebacken, bis der Rand Blasen wirft und der Käse Fäden zieht.",
     accent: "text-ember-400",
@@ -34,7 +31,6 @@ const SCENES: Scene[] = [
   },
   {
     art: "burger",
-    index: "03",
     title: "Saftige Burger",
     copy: "Frisches Rindfleisch auf der heißen Platte plattgedrückt für knusprig‑karamellisierte Ränder, gestapelt mit geschmolzenem Käse und unserer Haussauce.",
     accent: "text-flame-400",
@@ -42,7 +38,6 @@ const SCENES: Scene[] = [
   },
   {
     art: "fries",
-    index: "04",
     title: "Goldene Pommes",
     copy: "Zweimal frittiert für maximale Knusprigkeit und einen fluffigen Kern, gesalzen direkt aus der Fritteuse. Unmöglich zu teilen.",
     accent: "text-copper",
@@ -144,10 +139,7 @@ export default function FoodScroll() {
             >
               <div className="grid w-full items-center gap-8 md:grid-cols-2">
                 <div className="fs-text order-2 md:order-1">
-                  <span className={`font-display text-7xl font-black opacity-20 ${scene.accent}`}>
-                    {scene.index}
-                  </span>
-                  <h2 className="-mt-4 font-display text-4xl font-black sm:text-5xl lg:text-6xl">
+                  <h2 className="font-display text-4xl font-black sm:text-5xl lg:text-6xl">
                     {scene.title}
                   </h2>
                   <p className="mt-5 max-w-md text-base leading-relaxed text-cream/70 sm:text-lg">
