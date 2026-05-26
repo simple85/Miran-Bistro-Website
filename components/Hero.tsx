@@ -7,8 +7,8 @@ import FoodArt from "@/components/food/FoodArt";
 import { LINKS } from "@/lib/links";
 
 const FLOATERS = [
-  { art: "pizza", className: "top-14 left-2 w-20 sm:top-[20%] sm:left-[4%] sm:w-36 lg:w-44", depth: 60 },
-  { art: "burger", className: "top-14 right-2 w-20 sm:top-[16%] sm:right-[5%] sm:w-36 lg:w-48", depth: 90 },
+  { art: "pizza", className: "hidden lg:block lg:left-[4%] lg:top-[20%] lg:w-44", depth: 60 },
+  { art: "burger", className: "hidden lg:block lg:right-[5%] lg:top-[16%] lg:w-48", depth: 90 },
   { art: "fries", className: "left-[8%] bottom-[12%] w-24 sm:w-32 lg:w-40", depth: 110 },
   { art: "doner", className: "right-[7%] bottom-[10%] w-28 sm:w-36 lg:w-44", depth: 70 },
 ] as const;
