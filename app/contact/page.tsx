@@ -14,6 +14,10 @@ const HOURS = [
   { day: "Sonntag", time: "12:00 – 23:00" },
 ];
 
+// Storefront photo from the Google Maps listing (upscaled).
+const STOREFRONT =
+  "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF1AFqD1koIlVSUZSdGJgMwmb9vprg2U_B3rzqt2WmflPEIOqIrIQm_LcUfIYVESY1l2GGEkPdpJxvMxJ_ZLi_MgKGpAKiEmD8uu17WCsJg6r4QRryi6DHP37rOyKZv1j70pl5tJ3mw26o=w1280-h720-k-no";
+
 function Icon({ path }: { path: string }) {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -133,6 +137,38 @@ export default function ContactPage() {
               allowFullScreen
             />
           </div>
+        </Reveal>
+      </section>
+
+      {/* Storefront photo */}
+      <section className="container-px pb-20">
+        <Reveal y={50}>
+          <a
+            href={LINKS.directions}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative block overflow-hidden rounded-3xl border border-white/10"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={STOREFRONT}
+              alt="Miran Bistro – Außenansicht in der Langhansstraße 61, Berlin"
+              className="h-[320px] w-full object-cover transition-transform duration-700 group-hover:scale-105 sm:h-[460px]"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 p-6 sm:p-8">
+              <p className="mb-1 text-xs font-semibold uppercase tracking-[0.25em] text-ember-300">
+                So findest du uns
+              </p>
+              <h2 className="font-display text-2xl font-black sm:text-3xl">
+                Besuch uns in Weißensee
+              </h2>
+              <p className="mt-1 text-cream/80">
+                Langhansstraße 61 · 13086 Berlin
+              </p>
+            </div>
+          </a>
         </Reveal>
       </section>
     </>

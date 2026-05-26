@@ -24,7 +24,7 @@ export default function Hero() {
       tl.from(".hero-eyebrow", { y: 24, opacity: 0, duration: 0.6 })
         .from(
           ".hero-line",
-          { yPercent: 110, opacity: 0, duration: 0.9, stagger: 0.12 },
+          { y: 40, opacity: 0, duration: 0.8, stagger: 0.12 },
           "-=0.2"
         )
         .from(".hero-sub", { y: 20, opacity: 0, duration: 0.6 }, "-=0.4")
@@ -124,16 +124,10 @@ export default function Hero() {
           Berlin · Weißensee · Seit 2004
         </p>
 
-        <h1 className="font-display text-5xl font-black leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
-          <span className="block overflow-hidden">
-            <span className="hero-line block">Flammengegrillte</span>
-          </span>
-          <span className="block overflow-hidden">
-            <span className="hero-line block text-gradient">Perfektion</span>
-          </span>
-          <span className="block overflow-hidden">
-            <span className="hero-line block">in jedem Bissen</span>
-          </span>
+        <h1 className="font-display text-5xl font-black leading-[1.06] tracking-tight sm:text-7xl lg:text-8xl">
+          <span className="hero-line block pb-[0.06em]">Flammengegrillte</span>
+          <span className="hero-line block pb-[0.06em] text-gradient">Perfektion</span>
+          <span className="hero-line block pb-[0.06em]">in jedem Bissen</span>
         </h1>
 
         <p className="hero-sub mx-auto mt-6 max-w-2xl text-base text-cream/70 sm:text-lg">
@@ -179,13 +173,6 @@ export default function Hero() {
             <strong className="text-cream">4,7/5</strong> von hunderten
             zufriedenen Gästen
           </span>
-        </div>
-      </div>
-
-      {/* Scroll cue */}
-      <div className="absolute bottom-6 left-1/2 z-20 -translate-x-1/2">
-        <div className="flex h-10 w-6 items-start justify-center rounded-full border border-cream/30 p-1.5">
-          <span className="h-2 w-1 animate-bounce rounded-full bg-cream/70" />
         </div>
       </div>
     </section>

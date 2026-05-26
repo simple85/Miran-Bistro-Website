@@ -242,6 +242,22 @@ export const MENU: MenuCategory[] = [
         art: "salad",
         popular: true,
       },
+      {
+        name: "Hirtensalat",
+        description:
+          "Klassischer Çoban‑Salat aus Tomate, Gurke, Zwiebeln und Petersilie mit Zitrone und Olivenöl.",
+        price: "6,50 €",
+        art: "salad",
+        veggie: true,
+      },
+      {
+        name: "Falafel‑Salat",
+        description:
+          "Bunter Salat mit knusprigen Falafel, Hummus und frischem Kräuterdressing. Vegetarisch.",
+        price: "9,00 €",
+        art: "salad",
+        veggie: true,
+      },
     ],
   },
 ];

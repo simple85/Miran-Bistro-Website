@@ -26,15 +26,10 @@ export default function MenuCard({ item }: { item: MenuItem }) {
         {item.spicy && <Tag tone="bg-ember-500/20 text-ember-300">Scharf</Tag>}
       </div>
 
-      <div className="flex items-start justify-between gap-3">
-        <h3 className="font-display text-lg font-bold leading-tight text-cream">
-          {item.name}
-        </h3>
-        <span className="shrink-0 rounded-lg bg-gradient-to-r from-ember-500 to-flame-500 bg-clip-text font-bold text-transparent">
-          {item.price}
-        </span>
-      </div>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-cream/65">
+      <h3 className="font-display text-lg font-bold leading-tight text-cream">
+        {item.name}
+      </h3>
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-cream/70">
         {item.description}
       </p>
     </article>

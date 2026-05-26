@@ -30,6 +30,10 @@ export default function Reveal({
     const el = ref.current;
     if (!el) return;
 
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
     const ctx = gsap.context(() => {
       gsap.registerPlugin(ScrollTrigger);
 
@@ -37,18 +41,30 @@ export default function Reveal({
         ? (gsap.utils.toArray(el.children) as HTMLElement[])
         : [el];
 
-      gsap.from(targets, {
-        y,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power3.out",
-        delay,
-        stagger: staggerChildren ? stagger : 0,
-        scrollTrigger: {
-          trigger: el,
-          start: "top 85%",
-          once: true,
-        },
+      // Reduced motion: show everything immediately.
+      if (reduce) {
+        gsap.set(targets, { opacity: 1, y: 0 });
+        return;
+      }
+
+      gsap.set(targets, { opacity: 0, y });
+
+      // Use a one-shot trigger that animates TO the visible state so content
+      // can never get stuck hidden by a refresh re-rendering a from-tween.
+      ScrollTrigger.create({
+        trigger: el,
+        start: "top 88%",
+        once: true,
+        onEnter: () =>
+          gsap.to(targets, {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: "power3.out",
+            delay,
+            stagger: staggerChildren ? stagger : 0,
+            overwrite: true,
+          }),
       });
     }, ref);
 

@@ -17,8 +17,16 @@ type Scene = {
 
 const SCENES: Scene[] = [
   {
-    art: "pizza",
+    art: "doner",
     index: "01",
+    title: "Frischer Döner",
+    copy: "Am Drehspieß langsam gegart und frisch von Hand geschnitten – mit knackigem Salat und unseren hausgemachten Saucen im warmen Fladenbrot.",
+    accent: "text-ember-300",
+    glow: "bg-ember-500/25",
+  },
+  {
+    art: "pizza",
+    index: "02",
     title: "Steinofen‑Pizza",
     copy: "Handgezogener Teig, fruchtige Tomatensauce und blubbernder Mozzarella – gebacken, bis der Rand Blasen wirft und der Käse Fäden zieht.",
     accent: "text-ember-400",
@@ -26,7 +34,7 @@ const SCENES: Scene[] = [
   },
   {
     art: "burger",
-    index: "02",
+    index: "03",
     title: "Saftige Burger",
     copy: "Frisches Rindfleisch auf der heißen Platte plattgedrückt für knusprig‑karamellisierte Ränder, gestapelt mit geschmolzenem Käse und unserer Haussauce.",
     accent: "text-flame-400",
@@ -34,7 +42,7 @@ const SCENES: Scene[] = [
   },
   {
     art: "fries",
-    index: "03",
+    index: "04",
     title: "Goldene Pommes",
     copy: "Zweimal frittiert für maximale Knusprigkeit und einen fluffigen Kern, gesalzen direkt aus der Fritteuse. Unmöglich zu teilen.",
     accent: "text-copper",
@@ -129,11 +137,6 @@ export default function FoodScroll() {
     <section ref={section} className="relative h-screen overflow-hidden bg-charcoal">
       <div className="absolute inset-0 flex items-center">
         <div className="container-px relative w-full">
-          {/* Section label */}
-          <p className="absolute left-5 top-6 text-xs font-semibold uppercase tracking-[0.3em] text-cream/40 sm:left-8 lg:left-12">
-            Frisch gemacht – scrolle und genieße
-          </p>
-
           {SCENES.map((scene) => (
             <div
               key={scene.art}
