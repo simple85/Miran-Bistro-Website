@@ -19,6 +19,7 @@ export type MenuItem = {
   description: string;
   price: string;
   art: FoodArt;
+  image?: string;
   popular?: boolean;
   veggie?: boolean;
   spicy?: boolean;
@@ -66,6 +67,7 @@ export const MENU: MenuCategory[] = [
           "Knusprige Kichererbsen‑Falafel im Wrap mit Hummus, Salat und Kräutersauce. Vegetarisch.",
         price: "7,00 €",
         art: "falafel",
+        image: "/food/durum-falafel-solo-2.png",
         veggie: true,
       },
     ],
@@ -81,6 +83,7 @@ export const MENU: MenuCategory[] = [
           "Saftiges gegrilltes Rindfleisch‑Patty, frischer Salat und Sauce im getoasteten Bun. Mit Pommes.",
         price: "11,00 €",
         art: "burger",
+        image: "/food/hamburger.webp",
       },
       {
         name: "Cheeseburger Menü",
@@ -88,6 +91,7 @@ export const MENU: MenuCategory[] = [
           "Unser Hamburger gekrönt mit geschmolzenem Käse, als Menü mit goldenen Pommes serviert.",
         price: "12,00 €",
         art: "burger",
+        image: "/food/cheeseburger.png",
         popular: true,
       },
       {
@@ -96,6 +100,7 @@ export const MENU: MenuCategory[] = [
           "Knuspriges Hähnchenfilet, Salat und cremige Sauce in einem weichen, getoasteten Bun.",
         price: "8,50 €",
         art: "burger",
+        image: "/food/chickenburger.png",
       },
     ],
   },
@@ -110,6 +115,7 @@ export const MENU: MenuCategory[] = [
           "Klassische Tomatensauce, reichlich Mozzarella und frisches Basilikum auf dünnem Boden.",
         price: "7,50 €",
         art: "pizza",
+        image: "/food/pizza-magherita.png",
         veggie: true,
       },
       {
@@ -118,6 +124,7 @@ export const MENU: MenuCategory[] = [
           "Tomate, Mozzarella und eine großzügige Lage würzige Salami, goldgelb gebacken.",
         price: "8,50 €",
         art: "pizza",
+        image: "/food/pizza-salami.webp",
         popular: true,
       },
       {
@@ -126,6 +133,7 @@ export const MENU: MenuCategory[] = [
           "Tomate, Mozzarella und frische Champignons – einfach und befriedigend.",
         price: "8,00 €",
         art: "pizza",
+        image: "/food/pizza-funghi.png",
         veggie: true,
       },
       {
@@ -134,6 +142,7 @@ export const MENU: MenuCategory[] = [
           "Der Hausfavorit: Dönerfleisch, Paprika, Zwiebeln, Mais und extra Käse.",
         price: "10,50 €",
         art: "pizza",
+        image: "/food/pizza-miran-special.avif",
         spicy: true,
       },
     ],
