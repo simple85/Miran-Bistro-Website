@@ -17,6 +17,7 @@ export default function MenuCard({ item }: { item: MenuItem }) {
         <FoodImage
           name={item.art}
           src={item.image}
+          zoom={item.imageZoom}
           alt={item.name}
           className="aspect-square w-full transition-transform duration-500 group-hover:scale-105"
         />

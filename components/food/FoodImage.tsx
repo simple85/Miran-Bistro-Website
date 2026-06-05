@@ -28,11 +28,13 @@ type Props = {
   name: FoodArtName;
   /** Override the default photo for this art kind. */
   src?: string;
+  /** Scale factor for source images with extra padding around the food. */
+  zoom?: number;
   className?: string;
   alt?: string;
 };
 
-export default function FoodImage({ name, src, className, alt }: Props) {
+export default function FoodImage({ name, src, zoom, className, alt }: Props) {
   const [failed, setFailed] = useState(false);
   const raw = src ?? DEFAULT_PHOTOS[name];
 
@@ -52,6 +54,7 @@ export default function FoodImage({ name, src, className, alt }: Props) {
         alt={alt ?? name}
         loading="lazy"
         onError={() => setFailed(true)}
+        style={zoom ? { transform: `scale(${zoom})` } : undefined}
         className="absolute inset-0 h-full w-full object-cover"
       />
     </div>
