@@ -1,4 +1,4 @@
-import FoodArt from "@/components/food/FoodArt";
+import FoodImage from "@/components/food/FoodImage";
 import type { MenuItem } from "@/lib/menu";
 
 function Tag({ children, tone }: { children: React.ReactNode; tone: string }) {
@@ -14,8 +14,9 @@ export default function MenuCard({ item }: { item: MenuItem }) {
     <article className="card-glow group flex h-full flex-col p-5 transition-all duration-300 hover:-translate-y-1 hover:border-ember-400/40">
       <div className="relative mb-4 flex items-center justify-center">
         <div className="absolute inset-0 m-auto h-32 w-32 rounded-full bg-ember-500/10 blur-2xl transition-opacity duration-300 group-hover:opacity-80" />
-        <FoodArt
+        <FoodImage
           name={item.art}
+          alt={item.name}
           className="h-36 w-36 transition-transform duration-500 group-hover:scale-105 group-hover:rotate-3"
         />
       </div>

@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import FoodArt from "@/components/food/FoodArt";
+import FoodImage from "@/components/food/FoodImage";
 import { LINKS } from "@/lib/links";
 
 const FLOATERS = [
@@ -113,7 +113,7 @@ export default function Hero() {
           data-depth={f.depth}
           className={`hero-floater pointer-events-none absolute z-10 drop-shadow-2xl ${f.className}`}
         >
-          <FoodArt name={f.art} className="h-auto w-full" />
+          <FoodImage name={f.art} className="w-full" />
         </div>
       ))}
 
