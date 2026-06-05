@@ -123,7 +123,7 @@ export default function FoodScroll() {
           {SCENES.map((scene) => (
             <div
               key={scene.art}
-              className="fs-scene absolute inset-0 flex items-center"
+              className="fs-scene absolute inset-0 flex items-center px-5 sm:px-8 lg:px-12"
             >
               <div className="grid w-full items-center gap-8 md:grid-cols-2">
                 <div className="fs-text order-2 md:order-1">
