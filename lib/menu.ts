@@ -169,6 +169,7 @@ export const MENU: MenuCategory[] = [
           "Schiffchenförmiges türkisches Pide, gebacken mit gewürztem Hackfleisch und geschmolzenem Käse.",
         price: "9,00 €",
         art: "pide",
+        imageZoom: 0.85,
       },
       {
         name: "Köfte Teller",
@@ -207,6 +208,7 @@ export const MENU: MenuCategory[] = [
           "Knusprige Hähnchen‑Nuggets mit einem Dip nach Wahl und einer Portion Pommes.",
         price: "6,50 €",
         art: "nuggets",
+        imageZoom: 0.85,
       },
       {
         name: "Chicken Wings",
@@ -214,6 +216,7 @@ export const MENU: MenuCategory[] = [
           "Marinierte, gegrillte Hähnchenflügel mit einer rauchigen, leicht scharfen Glasur.",
         price: "7,00 €",
         art: "wings",
+        imageZoom: 0.85,
         spicy: true,
       },
       {
