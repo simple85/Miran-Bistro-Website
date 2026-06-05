@@ -44,6 +44,11 @@ export default function FoodImage({ name, src, zoom, className, alt }: Props) {
 
   const url = raw.startsWith("http") ? raw : asset(raw);
 
+  // When the caller wants to "zoom out" (zoom < 1) we switch to object-contain
+  // so the whole photo fits inside the circle without the wrapper cropping the
+  // sides off landscape source images.
+  const fit = zoom != null && zoom < 1 ? "object-contain" : "object-cover";
+
   return (
     <div
       className={`relative aspect-square overflow-hidden rounded-full bg-charcoal-700 shadow-inner ${className ?? ""}`}
@@ -55,7 +60,7 @@ export default function FoodImage({ name, src, zoom, className, alt }: Props) {
         loading="lazy"
         onError={() => setFailed(true)}
         style={zoom ? { transform: `scale(${zoom})` } : undefined}
-        className="absolute inset-0 h-full w-full object-cover"
+        className={`absolute inset-0 h-full w-full ${fit}`}
       />
     </div>
   );
