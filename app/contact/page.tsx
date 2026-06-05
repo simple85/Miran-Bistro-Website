@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import { CONTACT, LINKS } from "@/lib/links";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = {
   title: "Kontakt & Standort — Miran Bistro Berlin",
@@ -13,9 +14,8 @@ const HOURS = [
   { day: "Freitag - Sonntag", time: "10:00 – 05:00" },
 ];
 
-// Storefront photo from the Google Maps listing (upscaled).
-const STOREFRONT =
-  "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF1AFqD1koIlVSUZSdGJgMwmb9vprg2U_B3rzqt2WmflPEIOqIrIQm_LcUfIYVESY1l2GGEkPdpJxvMxJ_ZLi_MgKGpAKiEmD8uu17WCsJg6r4QRryi6DHP37rOyKZv1j70pl5tJ3mw26o=w1280-h720-k-no";
+// Self-hosted storefront photo.
+const STOREFRONT = asset("/storefront.webp");
 
 function Icon({ path }: { path: string }) {
   return (
