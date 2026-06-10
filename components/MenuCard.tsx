@@ -25,7 +25,8 @@ export default function MenuCard({ item }: { item: MenuItem }) {
 
       <div className="mb-2 flex flex-wrap items-center gap-1.5">
         {item.popular && <Tag tone="bg-flame-500/20 text-ember-300">Beliebt</Tag>}
-        {item.veggie && <Tag tone="bg-olive-500/25 text-olive-400">Vegetarisch</Tag>}
+        {item.vegan && <Tag tone="bg-olive-500/25 text-olive-400">Vegan</Tag>}
+        {item.veggie && !item.vegan && <Tag tone="bg-olive-500/25 text-olive-400">Vegetarisch</Tag>}
         {item.spicy && <Tag tone="bg-ember-500/20 text-ember-300">Scharf</Tag>}
       </div>
 

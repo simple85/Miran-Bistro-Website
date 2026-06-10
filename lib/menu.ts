@@ -24,6 +24,7 @@ export type MenuItem = {
   imageZoom?: number;
   popular?: boolean;
   veggie?: boolean;
+  vegan?: boolean;
   spicy?: boolean;
 };
 
@@ -71,6 +72,15 @@ export const MENU: MenuCategory[] = [
         art: "falafel",
         image: "/food/durum-falafel-solo-2.png",
         veggie: true,
+      },
+      {
+        name: "Seitan Döner",
+        description:
+          "Pflanzliches Seitan‑Döner mit knackigem Salat und unseren hausgemachten Saucen im warmen Fladenbrot. 100 % vegan.",
+        price: "7,50 €",
+        art: "doner",
+        image: "/food/seitan-doner.png",
+        vegan: true,
       },
     ],
   },
@@ -170,13 +180,6 @@ export const MENU: MenuCategory[] = [
         price: "9,00 €",
         art: "pide",
         imageZoom: 0.85,
-      },
-      {
-        name: "Köfte Teller",
-        description:
-          "Gegrillte türkische Hackbällchen mit Reis oder Pommes, frischem Salat und Brot.",
-        price: "12,50 €",
-        art: "kofte",
       },
       {
         name: "Currywurst Menü",
