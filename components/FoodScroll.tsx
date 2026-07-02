@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import FoodArt from "@/components/food/FoodArt";
+import FoodImage from "@/components/food/FoodImage";
 import type { FoodArt as FoodArtName } from "@/lib/menu";
 
 type Scene = {
@@ -155,7 +155,11 @@ export default function FoodScroll() {
                   <div className="relative">
                     <div className={`absolute inset-0 -z-10 scale-90 rounded-full blur-[80px] ${scene.glow}`} />
                     <div className="fs-art w-64 sm:w-80 lg:w-[26rem]">
-                      <FoodArt name={scene.art} className="h-auto w-full drop-shadow-2xl" />
+                      <FoodImage
+                        name={scene.art}
+                        alt={scene.title}
+                        className="w-full drop-shadow-2xl"
+                      />
                     </div>
                   </div>
                 </div>
