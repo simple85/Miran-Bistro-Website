@@ -97,14 +97,6 @@ export const MENU: MenuCategory[] = [
         price: "8,50 €",
         art: "burger",
       },
-      {
-        name: "Double Beef Burger",
-        description:
-          "Zwei gestapelte Rindfleisch‑Patties, doppelt Käse, Zwiebeln und Haussauce für den großen Hunger.",
-        price: "10,50 €",
-        art: "burger",
-        spicy: true,
-      },
     ],
   },
   {
@@ -217,45 +209,6 @@ export const MENU: MenuCategory[] = [
           "Sechs knusprige Kichererbsen‑Falafel mit Hummus und frischem Kräuterdip. Vegetarisch.",
         price: "5,50 €",
         art: "falafel",
-        veggie: true,
-      },
-    ],
-  },
-  {
-    id: "salads",
-    title: "Salate",
-    tagline: "Knackig, frisch und am selben Morgen zubereitet.",
-    items: [
-      {
-        name: "Bauernsalat",
-        description:
-          "Tomate, Gurke, Paprika, Zwiebeln und Oliven mit einem spritzigen Hausdressing.",
-        price: "6,00 €",
-        art: "salad",
-        veggie: true,
-      },
-      {
-        name: "Hähnchensalat",
-        description:
-          "Frischer gemischter Salat mit warmen gegrillten Hähnchenstreifen und Dressing.",
-        price: "8,50 €",
-        art: "salad",
-        popular: true,
-      },
-      {
-        name: "Hirtensalat",
-        description:
-          "Klassischer Çoban‑Salat aus Tomate, Gurke, Zwiebeln und Petersilie mit Zitrone und Olivenöl.",
-        price: "6,50 €",
-        art: "salad",
-        veggie: true,
-      },
-      {
-        name: "Falafel‑Salat",
-        description:
-          "Bunter Salat mit knusprigen Falafel, Hummus und frischem Kräuterdressing. Vegetarisch.",
-        price: "9,00 €",
-        art: "salad",
         veggie: true,
       },
     ],
