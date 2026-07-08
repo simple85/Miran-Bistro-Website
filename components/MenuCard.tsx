@@ -16,6 +16,7 @@ export default function MenuCard({ item }: { item: MenuItem }) {
         <div className="absolute inset-0 m-auto h-32 w-32 rounded-full bg-ember-500/10 blur-2xl transition-opacity duration-300 group-hover:opacity-80" />
         <FoodImage
           name={item.art}
+          src={item.image}
           alt={item.name}
           className="h-36 w-36 transition-transform duration-500 group-hover:scale-105 group-hover:rotate-3"
         />
