@@ -9,7 +9,7 @@ import type { FoodArt as FoodArtName } from "@/lib/menu";
 // and any menu item that doesn't supply its own `image` override. All files
 // live in /public/food and are bundled with the site.
 const DEFAULT_PHOTOS: Partial<Record<FoodArtName, string>> = {
-  doner: "/food/doner.webp",
+  doner: "/food/doner.png",
   durum: "/food/durum.png",
   donerplate: "/food/doener-teller.png",
   burger: "/food/cheeseburger.png",
