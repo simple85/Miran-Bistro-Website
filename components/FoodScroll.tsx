@@ -98,18 +98,6 @@ export default function FoodScroll() {
           );
       }
 
-      // Continuous spin of every plate tied to scroll progress.
-      gsap.to(".fs-art", {
-        rotation: "+=120",
-        ease: "none",
-        scrollTrigger: {
-          trigger: section.current,
-          start: "top top",
-          end: "+=" + (SCENES.length - 1) * 110 + "%",
-          scrub: 1.5,
-        },
-      });
-
       // Progress dots
       ScrollTrigger.create({
         trigger: section.current,
