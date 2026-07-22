@@ -20,6 +20,8 @@ export type MenuItem = {
   price: string;
   art: FoodArt;
   image?: string;
+  /** CSS scale applied to the photo (use for source images with extra padding around the food). */
+  imageZoom?: number;
   popular?: boolean;
   veggie?: boolean;
   spicy?: boolean;
@@ -84,6 +86,7 @@ export const MENU: MenuCategory[] = [
         price: "11,00 €",
         art: "burger",
         image: "/food/hamburger.webp",
+        imageZoom: 1.7,
       },
       {
         name: "Cheeseburger Menü",
