@@ -86,7 +86,7 @@ export const MENU: MenuCategory[] = [
         price: "11,00 €",
         art: "burger",
         image: "/food/hamburger.webp",
-        imageZoom: 1.7,
+        imageZoom: 2.4,
       },
       {
         name: "Cheeseburger Menü",
