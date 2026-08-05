@@ -86,7 +86,7 @@ export const MENU: MenuCategory[] = [
         price: "11,00 €",
         art: "burger",
         image: "/food/hamburger.webp",
-        imageZoom: 1.8,
+        imageZoom: 1.7,
       },
       {
         name: "Cheeseburger Menü",
@@ -183,6 +183,7 @@ export const MENU: MenuCategory[] = [
           "Wurst in unserer würzigen Currysauce, als Menü mit knusprigen Pommes serviert.",
         price: "8,00 €",
         art: "currywurst",
+        imageZoom: 0.85,
       },
     ],
   },
