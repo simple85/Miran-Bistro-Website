@@ -34,6 +34,8 @@ export default function HomePage() {
     <>
       <Hero />
 
+      <OrderCTA />
+
       {/* Fresh promise strip */}
       <section className="container-px -mt-2 py-16">
         <Reveal staggerChildren className="grid gap-5 md:grid-cols-3">
@@ -85,8 +87,6 @@ export default function HomePage() {
       </section>
 
       <Reviews />
-
-      <OrderCTA />
     </>
   );
 }
