@@ -106,20 +106,12 @@ export default function ContactPage() {
 
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
-              href={LINKS.lieferando}
+              href={LINKS.order}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary flex-1"
             >
-              Lieferando
-            </a>
-            <a
-              href={LINKS.uberEats}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary flex-1 bg-gradient-to-r from-olive-500 to-olive-600 shadow-olive-500/30"
-            >
-              Uber Eats
+              Jetzt Bestellen
             </a>
           </div>
         </Reveal>

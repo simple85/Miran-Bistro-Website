@@ -138,20 +138,12 @@ export default function Hero() {
 
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
           <a
-            href={LINKS.lieferando}
+            href={LINKS.order}
             target="_blank"
             rel="noopener noreferrer"
             className="hero-btn btn-primary w-full sm:w-auto"
           >
-            Bei Lieferando bestellen
-          </a>
-          <a
-            href={LINKS.uberEats}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hero-btn btn-primary w-full bg-gradient-to-r from-olive-500 to-olive-600 shadow-olive-500/30 hover:shadow-olive-500/40 sm:w-auto"
-          >
-            Bei Uber Eats bestellen
+            Jetzt Bestellen
           </a>
           <a
             href={LINKS.directions}

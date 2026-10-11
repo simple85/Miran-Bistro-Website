@@ -74,7 +74,7 @@ export default function MenuPage() {
 
         <p className="text-center text-xs text-cream/40">
           Die Gerichtbilder sind illustrativ. Preise und Verfügbarkeit können
-          abweichen – aktuelle Bestellungen über Lieferando oder Uber Eats.
+          abweichen – aktuelle Bestellungen über unsere Online‑Bestellseite.
         </p>
       </div>
 
