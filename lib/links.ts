@@ -1,8 +1,5 @@
 export const LINKS = {
-  lieferando:
-    "https://www.lieferando.de/speisekarte/miran-bistro-langhansstrasse#kategorie_fdba883a-1459-40fb-80dc-c3ddb783a5ab",
-  uberEats:
-    "https://www.ubereats.com/de-en/store/miran-bistro/V3lx3UzaU6qCsQkiQn0BmA",
+  order: "https://miranbistro.jetzt-bestellen.com/",
   directions: "https://maps.app.goo.gl/wEGE2aHE19Rt8CFbA",
 } as const;
 

@@ -41,7 +41,7 @@ const REVIEWS: Review[] = [
     name: "Tobias R.",
     initial: "T",
     time: "vor 1 Woche",
-    text: "Schnelle Lieferung über Lieferando, Essen noch warm und sorgfältig verpackt. Die Miran‑Spezial‑Pizza muss man probiert haben.",
+    text: "Schnelle Lieferung, Essen noch warm und sorgfältig verpackt. Die Miran‑Spezial‑Pizza muss man probiert haben.",
     color: "from-ember-600 to-flame-600",
   },
   {

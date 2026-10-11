@@ -63,20 +63,12 @@ export default function Footer() {
           </h4>
           <div className="mt-4 flex flex-col gap-3">
             <a
-              href={LINKS.lieferando}
+              href={LINKS.order}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
             >
-              Bei Lieferando bestellen
-            </a>
-            <a
-              href={LINKS.uberEats}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary bg-gradient-to-r from-olive-500 to-olive-600"
-            >
-              Bei Uber Eats bestellen
+              Jetzt Bestellen
             </a>
           </div>
         </div>
