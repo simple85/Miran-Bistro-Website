@@ -47,47 +47,51 @@ export default function Hero() {
           "-=0.8"
         );
 
-      // Continuous gentle floating
-      gsap.utils.toArray<HTMLElement>(".hero-floater").forEach((el, i) => {
-        gsap.to(el, {
-          y: "+=18",
-          rotation: i % 2 === 0 ? 6 : -6,
-          duration: 3 + i * 0.4,
-          ease: "sine.inOut",
-          repeat: -1,
-          yoyo: true,
-        });
-      });
+      const isMobile = window.innerWidth < 768;
 
-      // Parallax on scroll
-      gsap.utils.toArray<HTMLElement>(".hero-floater").forEach((el) => {
-        const depth = Number(el.dataset.depth ?? 60);
-        gsap.to(el, {
-          yPercent: depth,
-          ease: "none",
-          scrollTrigger: {
-            trigger: root.current,
-            start: "top top",
-            end: "bottom top",
-            scrub: true,
-          },
+      if (!isMobile) {
+        // Continuous gentle floating (desktop only)
+        gsap.utils.toArray<HTMLElement>(".hero-floater").forEach((el, i) => {
+          gsap.to(el, {
+            y: "+=18",
+            rotation: i % 2 === 0 ? 6 : -6,
+            duration: 3 + i * 0.4,
+            ease: "sine.inOut",
+            repeat: -1,
+            yoyo: true,
+          });
         });
-      });
 
-      // Subtle parallax on mouse move (desktop)
-      const onMove = (e: MouseEvent) => {
-        const { innerWidth, innerHeight } = window;
-        const x = (e.clientX / innerWidth - 0.5) * 2;
-        const y = (e.clientY / innerHeight - 0.5) * 2;
-        gsap.to(".hero-floater", {
-          x: (i: number) => x * (10 + i * 6),
-          duration: 0.8,
-          ease: "power2.out",
-          overwrite: "auto",
+        // Parallax on scroll (desktop only)
+        gsap.utils.toArray<HTMLElement>(".hero-floater").forEach((el) => {
+          const depth = Number(el.dataset.depth ?? 60);
+          gsap.to(el, {
+            yPercent: depth,
+            ease: "none",
+            scrollTrigger: {
+              trigger: root.current,
+              start: "top top",
+              end: "bottom top",
+              scrub: true,
+            },
+          });
         });
-      };
-      window.addEventListener("mousemove", onMove);
-      return () => window.removeEventListener("mousemove", onMove);
+
+        // Subtle parallax on mouse move (desktop only)
+        const onMove = (e: MouseEvent) => {
+          const { innerWidth, innerHeight } = window;
+          const x = (e.clientX / innerWidth - 0.5) * 2;
+          const y = (e.clientY / innerHeight - 0.5) * 2;
+          gsap.to(".hero-floater", {
+            x: (i: number) => x * (10 + i * 6),
+            duration: 0.8,
+            ease: "power2.out",
+            overwrite: "auto",
+          });
+        };
+        window.addEventListener("mousemove", onMove);
+        return () => window.removeEventListener("mousemove", onMove);
+      }
     }, root);
 
     return () => ctx.revert();
@@ -100,9 +104,9 @@ export default function Hero() {
     >
       {/* Background glows */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-1/3 h-[60vw] w-[60vw] -translate-x-1/2 rounded-full bg-ember-600/20 blur-[120px]" />
-        <div className="absolute right-0 top-0 h-[40vw] w-[40vw] rounded-full bg-flame-600/15 blur-[120px]" />
-        <div className="absolute bottom-0 left-0 h-[35vw] w-[35vw] rounded-full bg-ember-500/10 blur-[120px]" />
+        <div className="absolute left-1/2 top-1/3 h-[60vw] w-[60vw] -translate-x-1/2 rounded-full bg-ember-600/20 blur-[60px] md:blur-[120px]" />
+        <div className="absolute right-0 top-0 h-[40vw] w-[40vw] rounded-full bg-flame-600/15 blur-[60px] md:blur-[120px]" />
+        <div className="absolute bottom-0 left-0 h-[35vw] w-[35vw] rounded-full bg-ember-500/10 blur-[60px] md:blur-[120px]" />
       </div>
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(249,115,22,0.12),transparent_55%)]" />
 
@@ -111,7 +115,7 @@ export default function Hero() {
         <div
           key={f.art}
           data-depth={f.depth}
-          className={`hero-floater pointer-events-none absolute z-10 drop-shadow-2xl ${f.className}`}
+          className={`hero-floater pointer-events-none absolute z-10 md:drop-shadow-2xl ${f.className}`}
         >
           <FoodImage name={f.art} className="w-full" />
         </div>

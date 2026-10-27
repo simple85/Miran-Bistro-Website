@@ -5,8 +5,8 @@ export default function OrderCTA() {
   return (
     <section className="container-px py-20">
       <Reveal className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-charcoal-700 to-charcoal-800 px-6 py-14 text-center sm:px-12">
-        <div className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rounded-full bg-ember-600/30 blur-[80px]" />
-        <div className="pointer-events-none absolute -bottom-10 -right-10 h-48 w-48 rounded-full bg-flame-600/25 blur-[80px]" />
+        <div className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rounded-full bg-ember-600/30 blur-[40px] md:blur-[80px]" />
+        <div className="pointer-events-none absolute -bottom-10 -right-10 h-48 w-48 rounded-full bg-flame-600/25 blur-[40px] md:blur-[80px]" />
         <div className="relative">
           <h2 className="font-display text-4xl font-black sm:text-5xl">
             Hunger? <span className="text-gradient">Das lösen wir.</span>

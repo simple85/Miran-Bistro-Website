@@ -39,7 +39,7 @@ export default function AboutPage() {
   return (
     <>
       <header className="relative overflow-hidden pb-10 pt-32 sm:pt-40">
-        <div className="pointer-events-none absolute right-0 top-10 h-[40vw] w-[40vw] rounded-full bg-flame-600/15 blur-[120px]" />
+        <div className="pointer-events-none absolute right-0 top-10 h-[40vw] w-[40vw] rounded-full bg-flame-600/15 blur-[60px] md:blur-[120px]" />
         <div className="container-px relative">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-ember-400">
             Unsere Geschichte

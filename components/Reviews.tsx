@@ -79,7 +79,7 @@ function GoogleG() {
 export default function Reviews() {
   return (
     <section className="relative overflow-hidden py-24">
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[40vw] w-[40vw] -translate-x-1/2 rounded-full bg-ember-600/10 blur-[120px]" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[40vw] w-[40vw] -translate-x-1/2 rounded-full bg-ember-600/10 blur-[60px] md:blur-[120px]" />
       <div className="container-px relative">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-cream/70">

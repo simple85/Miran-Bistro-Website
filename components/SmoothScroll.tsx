@@ -16,8 +16,9 @@ export default function SmoothScroll({
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
+    const isMobile = window.innerWidth < 768;
 
-    if (prefersReduced) return;
+    if (prefersReduced || isMobile) return;
 
     const lenis = new Lenis({
       duration: 1.1,

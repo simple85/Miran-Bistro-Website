@@ -141,7 +141,7 @@ export default function FoodScroll() {
 
                 <div className="order-1 flex justify-center md:order-2">
                   <div className="relative">
-                    <div className={`absolute inset-0 -z-10 scale-90 rounded-full blur-[80px] ${scene.glow}`} />
+                    <div className={`absolute inset-0 -z-10 scale-90 rounded-full blur-[40px] md:blur-[80px] ${scene.glow}`} />
                     <div className="fs-art w-64 sm:w-80 lg:w-[26rem]">
                       <FoodImage
                         name={scene.art}

@@ -29,7 +29,7 @@ export default function ContactPage() {
   return (
     <>
       <header className="relative overflow-hidden pb-8 pt-32 sm:pt-40">
-        <div className="pointer-events-none absolute left-1/2 top-10 h-[40vw] w-[40vw] -translate-x-1/2 rounded-full bg-ember-600/15 blur-[120px]" />
+        <div className="pointer-events-none absolute left-1/2 top-10 h-[40vw] w-[40vw] -translate-x-1/2 rounded-full bg-ember-600/15 blur-[60px] md:blur-[120px]" />
         <div className="container-px relative text-center">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-ember-400">
             Komm vorbei
