@@ -4,18 +4,22 @@ A modern, animated restaurant website built for **Miran Bistro**, a family-owned
 
 **Live site:** [simple85.github.io/Miran-Bistro-Website](https://simple85.github.io/Miran-Bistro-Website/)
 
+[![CI](https://github.com/simple85/Miran-Bistro-Website/actions/workflows/ci.yml/badge.svg)](https://github.com/simple85/Miran-Bistro-Website/actions/workflows/ci.yml)
+
 ![Next.js](https://img.shields.io/badge/Next.js_15-000?logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
 ![GSAP](https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=black)
+![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white)
 
 ---
 
 ## Preview
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/placeholder" alt="Miran Bistro hero section" width="800" />
+  <img src="docs/preview.png" alt="Miran Bistro hero section" width="800" />
 </p>
 
 ---
@@ -28,7 +32,8 @@ A modern, animated restaurant website built for **Miran Bistro**, a family-owned
 - **Custom design system** · A warm, dark-themed palette (deep wine, ember, flame, copper, cream) with custom Tailwind tokens, gradient text utilities, glassmorphism cards, and custom scrollbar styling.
 - **Responsive & mobile-first** · Fluid typography, collapsible hamburger nav, responsive grid layouts, and touch-friendly interactions down to 375px.
 - **SEO-optimized** · Open Graph metadata, semantic HTML, structured headings, and German-language content with proper `lang` attributes.
-- **CI/CD pipeline** · GitHub Actions workflows for continuous integration and automatic deployment to GitHub Pages on every push.
+- **Tested** · Jest + React Testing Library for components and menu data, Playwright end-to-end tests against the real static export on desktop Chrome and iPhone Safari.
+- **CI/CD pipeline** · GitHub Actions runs type checks, unit and E2E tests on every push, then deploys to GitHub Pages.
 
 ## Pages
 
@@ -49,6 +54,7 @@ A modern, animated restaurant website built for **Miran Bistro**, a family-owned
 | Animations | **GSAP** (ScrollTrigger, timelines, parallax) |
 | Scroll | **Lenis** smooth scroll |
 | Fonts | Playfair Display (headings) + Inter (body) via Google Fonts |
+| Testing | **Jest**, **React Testing Library**, **Playwright** |
 | Deploy | **GitHub Pages** via GitHub Actions |
 
 ## Getting Started
@@ -80,6 +86,22 @@ npm run build
 
 The output is written to the `out/` directory, ready to be served by any static host.
 
+## Testing
+
+```bash
+npm test             # unit + component tests (Jest)
+npm run test:e2e     # end-to-end tests (Playwright) against the static export
+```
+
+| Layer | What it covers |
+|-------|----------------|
+| Data | Menu integrity: categories, unique dishes, price format, and that every referenced photo exists |
+| Components | Menu card badges (popular, vegan, vegetarian, spicy), navbar links, active page, mobile menu |
+| Helpers | GitHub Pages base-path handling, contact links |
+| End-to-end | Every page renders with no console errors, menu anchors, `tel:` link, order button, navigation (including the mobile menu), no broken images |
+
+Run `npx playwright install` once before the first E2E run.
+
 ## Project Structure
 
 ```
@@ -102,6 +124,8 @@ The output is written to the `out/` directory, ready to be served by any static 
 │   ├── CountUp.tsx         # Animated number counter
 │   ├── SmoothScroll.tsx    # Lenis smooth scroll provider
 │   └── food/              # Food image components
+├── __tests__/              # Jest unit & component tests
+├── e2e/                    # Playwright end-to-end tests
 ├── lib/
 │   ├── menu.ts             # Typed menu data (categories, items, dietary flags)
 │   ├── links.ts            # External links & contact info
@@ -115,4 +139,4 @@ The output is written to the `out/` directory, ready to be served by any static 
 
 ## License
 
-This project was built as a freelance commission. The code is available for reference and portfolio purposes.
+Built as a freelance commission for Miran Bistro. The code is shared for reference and portfolio purposes only. All rights reserved; see [LICENSE](LICENSE). The restaurant's name, logo, photos and content belong to Miran Bistro.
